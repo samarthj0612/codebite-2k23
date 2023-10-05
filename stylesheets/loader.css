@@ -1,0 +1,68 @@
+#sj-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+#count {
+  color: white;
+  font-size: 5vw;
+  font-family: "optivenus";
+}
+#loader1 {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  transform-style: preserve-3d;
+  transform: perspective(500px) rotateX(80deg) rotateY(60deg) rotateZ(-270deg);
+}
+#loader2 {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  transform-style: preserve-3d;
+  transform: perspective(500px) rotateX(80deg) rotateY(60deg) rotateZ(90deg);
+}
+
+#loader1 span {
+  position: absolute;
+  display: block;
+  border: 0px solid white;
+  box-shadow: 0 5px 0 white, inset 0 5px 0 #d6d6d6;
+  box-sizing: border-box;
+  border-radius: 40%;
+  animation: animate1 3s ease-in-out infinite;
+}
+@keyframes animate1 {
+  0%,
+  100% {
+    transform: translateZ(200px);
+  }
+  50% {
+    transform: translateZ(0px);
+  }
+}
+#loader2 span {
+  position: absolute;
+  display: block;
+  border: 0px solid white;
+  box-shadow: 0 5px 0 white, inset 0 5px 0 #d6d6d6;
+  box-sizing: border-box;
+  border-radius: 40%;
+  animation: animate 3s ease-in-out infinite;
+}
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateZ(-200px);
+  }
+  50% {
+    transform: translateZ(0px);
+  }
+}
