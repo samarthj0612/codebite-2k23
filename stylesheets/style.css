@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "optivenus";
+  src: url("../fonts/OPTIVENUS-BOLDEXTENDED.OTF");
+}
+@font-face {
+  font-family: "bigilla";
+  src: url("../fonts/BIGILLA-BOLD.OTF");
+}
+@font-face {
+  font-family: "frock thin";
+  src: url("../fonts/FROCKTHIN-P7XZV.TTF");
+}
+@font-face {
+  font-family: "bizantheum";
+  src: url("../fonts/BIZANTHEUM-FONT.OTF");
+}
+
 * {
   margin: 0;
   padding: 0;
